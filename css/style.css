@@ -1,0 +1,96 @@
+/*body {
+  position: relative;
+}*/
+/* the default position for all html elements is static */
+h1, h2, h6 {
+  margin: 0;
+}
+
+/*because this is statically positioned by default the top property has no effect, to use top you need to change
+to any different position property (this goes for right, left, and bottom as well) */
+.ad-text {
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+
+/*With position relative set margin left right and set no width*/
+.header {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  /*bottom: 10px;*/
+  /*margin-left: 10px;*/
+  /*margin-right: 10px;*/
+  /*margin-top: 10px;*/
+  height: 100px;
+  /*width: 100%;*/
+  background-color: rgb(51, 168, 101);
+}
+
+.header-text {
+  position: absolute;
+  /*text-align: center;*/
+  /*width: 100%;*/
+  /*line-height: 100px;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+}
+
+/*With position absolute use left right for offset spacing and set no width */
+.bottom {
+  width: 100vw;
+  height: 200px;
+  background-color: rgb(212, 51, 30);
+  position: absolute;
+  /*left: 10px;*/
+  /*right: 10px;*/
+  bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.footer-text {
+  /*position: relative;*/
+  /*text-align: center;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+}
+
+
+.long-page {
+  /*position: relative;*/
+  /*width:100%;*/
+  height: 200vh;
+}
+
+
+/* An element with position: fixed; is positioned relative to the viewport, which means
+ it always stays in the same place even if the page is scrolled. The top, right, bottom,
+  and left properties are used to position the element.*/
+
+.pop-up-ad {
+  width: 250px;
+  height: 300px;
+  background-color: rgb(199, 213, 211);
+  border: solid black;
+  position: fixed;
+  left: 25%;
+  top: 25%;
+}
+
+
+  /* with static elements top/bottom/left/right don't affect its position however you can add margin.
+  top/bottom/left/right don't add margin, they simply move the element by the amount specified from
+  their natural position */
+.boring {
+  position: static;
+  /*margin-left: 10px;*/
+  /*margin-top: 10px;*/
+  left: 10px;
+  width: 300px;
+  background-color: rgb(133, 7, 200);
+}
